@@ -16,11 +16,12 @@ const anagram = (str1, str2) => {
         //comparer les 2 elements
         str1 = str1Sort.join('');
         str2 = str2Sort.join('');   
-        if (str1.includes(str2)===true) {
-            return true;       
-        }else{
-            return false;
-        }
+        return str1.includes(str2);
+        // if (str1.includes(str2)===true) {
+            // return true;       
+        // }else{
+        //     return false;
+        // }
     }else{
         return false
     }
